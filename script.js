@@ -1,8 +1,7 @@
 var score = 0;
 var nScore = document.querySelector('.score');
-var text = document.querySelectorAll(".text");
+var text = document.querySelector('.text');
 const next = document.querySelector('button');
-
 
 var q1 = document.querySelector('.q-1');
 var q2 = document.querySelector('.q-2');
@@ -18,11 +17,6 @@ var h1 = document.querySelector("h1")
 var cuida = document.querySelector('.pfinal')
 
 
-
-
-
-
-
 var questionActual = 1;
 
 
@@ -30,13 +24,12 @@ var questionActual = 1;
 function verificacao(n) {
     var select = document.getElementById(n);
     var correct = document.querySelector('.correct')
-    var item = document.querySelectorAll(".select")
-
 
     select.style.background = 'red'
     select.style.color = 'white'
     correct.style.background = 'green'
     correct.style.color = 'white'
+    correct.style.border = '1px solid green'
 
     if (select === correct) {
         score += 1
@@ -83,3 +76,33 @@ function nxt() {
     } 
 } 
 
+function brilho() {
+    var circle = document.querySelector(".circle")
+    var body = document.body
+    var container = document.querySelector(".container")
+    var claro = document.querySelector(".fa-sun")
+    var escuro = document.querySelector("#escuro")
+    var back = document.querySelector(".toggle")
+
+    circle.classList.toggle('light')
+    circle.classList.toggle('dark')
+
+
+    if (circle.classList.contains('dark')) {
+        container.style.background = 'black';
+        body.style.background = '#150889';
+        container.style.color = 'white';
+        next.style.border = 'none'
+        claro.style.display = 'none'
+        escuro.style.display = 'block'
+        circle.style.left = '21px'
+    } else {
+        container.style.background = 'white';
+        body.style.background = '#150889';
+        container.style.color = '';
+        escuro.style.display = 'none'
+        claro.style.display = 'block'
+        circle.style.left = '2px'
+
+    }
+}

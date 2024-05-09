@@ -1,33 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
 * {
     padding: 0;
-    font-family: 'Poppins', 'Arial';
+    font-family: 'Outfit';
     margin: 0;
-    color: rgb(0, 0, 97);
 }
 
 body {
-    background-color: rgb(0, 0, 97);
+    background-color: rgb(21, 8, 137);
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center; 
 }
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgb(21, 8, 137);
+    border-top: none;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 20px;
+}
+
+.toggle {
+    background-color: rgb(21, 8, 137);
+    width: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.circle {
+    background-color: white;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    position: absolute;
+    left: 2px;
+    font-size: 13px;
+    text-align: center;
+    transition: ease 0.5s;
+}
+
+#escuro {
+    display: none;
+    color: rgb(21, 8, 137);
+    position: absolute;
+    left: 3px;
+    top: 2px;
+}
+
+.fa-sun {
+    position: absolute;
+    left: 1.8px;
+    top: 2px;
+}
+
+
+
+
 
 
 .container {
     background-color: white;
-    padding: 40px 20px;
+    padding: 0px 20px 20px 20px;
     border-radius: 10px;
     width: 800px;
+    color: rgb(21, 8, 137);
+    transition: all 0.5s;
 }
 .container {
     scale: 150%;
 }
 
 .header {
-    border-bottom: 1px solid rgb(0, 0, 97);
+    border-bottom: 1px solid rgb(21, 8, 137);
     display: flex;
     justify-content: space-between;
     font-size: 25px;
@@ -44,7 +95,7 @@ body {
 }
 
 .select {
-    border: 1px solid rgb(0, 0, 97);
+    border: 1px solid rgb(21, 8, 137);
     padding: 10px;
     margin-top: 10px;
     border-radius: 5px;
@@ -53,7 +104,7 @@ body {
 }
 
 .select:hover {
-    background-color: rgb(0, 0, 97);
+    background-color: rgb(21, 8, 137);
     color: white;
 }
 
@@ -65,18 +116,21 @@ body {
 }
 
 button {
-    background-color: rgb(0, 0, 97);
+    background-color: rgb(21, 8, 137);
     border-radius: 5px;
     color: white;
     border: none;
     padding: 10px 40px;
-    margin-top: 30px;    transition: all 0.5s;
+    margin-top: 30px; 
+    transition: all 0.5s;
+    cursor: pointer;
+
 }
 
 button:hover {
     background-color: white;
-    color: rgb(0, 0, 97);
-    border: 2px solid rgb(0, 0, 97);
+    color: rgb(21, 8, 137);
+    border: 2px solid rgb(21, 8, 137);
 }
 
 .finalScore {
@@ -98,6 +152,35 @@ h1 {
 .finalScore p {
     font-size: 20px;
 }
+
+
+
+.top-header {
+    background-color: white;
+    color: white;
+    width: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
