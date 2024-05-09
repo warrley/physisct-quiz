@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">Warley Quiz</div>
+            <div class="score">Score: 0</div>
+        </div>
+        
+        <div class="q-1">
+            <div class="question">1. Who discovered the General Relativy?</div>
+            <div class="select" id="one" onclick="verificacao('one')">Schorodinger</div>
+            <div class="select correct" id="two" onclick="verificacao('two')">Einstein</div>
+            <div class="select" id="three" onclick="verificacao('three')">Newton</div>
+            <div class="select" id="four" onclick="verificacao('four')">Planck</div>
+            <div class="text"></div>
+        </div>
+
+        <div class="q-2">
+            <div class="question">2. What is the weakest force in nature?</div>
+            <div class="select correct" id="one" onclick="verificacao('one')">Gravity</div>
+            <div class="select" id="two" onclick="verificacao('two')">Srong Force</div>
+            <div class="select" id="three" onclick="verificacao('three')">Eletromagnetism</div>
+            <div class="select" id="four" onclick="verificacao('four')">Weak Force</div>
+            <div class="text"></div>
+        </div>
+
+        <div class="q-3">
+            <div class="question">3. Which bóson strong force?</div>
+            <div class="select" id="one" onclick="verificacao('one')">Photon</div>
+            <div class="select " id="two" onclick="verificacao('two')">Z</div>
+            <div class="select" id="three" onclick="verificacao('three')">W</div>
+            <div class="select correct" id="four" onclick="verificacao('four')">Glúon</div>
+            <div class="text"></div>
+        </div>
+
+        <div class="q-4">
+            <div class="question">4. How many generation of quarks exist?</div>
+            <div class="select" id="one" onclick="verificacao('one')">1</div>
+            <div class="select" id="two" onclick="verificacao('two')">2</div>
+            <div class="select correct" id="three" onclick="verificacao('three')">3</div>
+            <div class="select" id="four" onclick="verificacao('four')">4</div>
+            <div class="text"></div>
+        </div>
+
+        <div class="q-5">
+            <div class="question">5. What is the last element a star burns</div>
+            <div class="select" id="one" onclick="verificacao('one')">Helium</div>
+            <div class="select " id="two" onclick="verificacao('two')">Hydrogen</div>
+            <div class="select correct" id="three" onclick="verificacao('three')">Iron</div>
+            <div class="select" id="four" onclick="verificacao('four')">Uranium</div>
+            <div class="text"></div>
+        </div>
+
+        <div class="q-6">
+            <div class="question">6. How much mass does a star need to turn into a black hole?</div>
+            <div class="select correct" id="one" onclick="verificacao('one')">8x solar mass</div>
+            <div class="select " id="two" onclick="verificacao('two')">2x solar mass</div>
+            <div class="select" id="three" onclick="verificacao('three')">3x solar mass</div>
+            <div class="select" id="four" onclick="verificacao('four')">10x solar mass</div>
+            <div class="text"></div>
+        </div>
+
+        <div class="finalScore">
+            <h2>Your final score is:</h2>
+            <h1>8</h1>
+            <p class="pfinal">Your media is 3.5</p>
+        </div>
+
+        <div class="button">
+            <button onclick="nxt()">Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

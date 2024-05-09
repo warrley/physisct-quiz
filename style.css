@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    font-family: 'Poppins', 'Arial';
+    margin: 0;
+    color: rgb(0, 0, 97);
+}
+
+body {
+    background-color: rgb(0, 0, 97);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.container {
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    width: 800px;
+}
+.container {
+    scale: 150%;
+}
+
+.header {
+    border-bottom: 1px solid rgb(0, 0, 97);
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.title {
+    padding-bottom: 10px;
+}
+
+.question {
+    font-weight: 700;
+}
+
+.select {
+    border: 1px solid rgb(0, 0, 97);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+
+.select:hover {
+    background-color: rgb(0, 0, 97);
+    color: white;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+button {
+    background-color: rgb(0, 0, 97);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    margin-top: 30px;    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: white;
+    color: rgb(0, 0, 97);
+    border: 2px solid rgb(0, 0, 97);
+}
+
+.finalScore {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+.finalScore p {
+    font-size: 20px;
+}
+
+
+
+.q-1 {
+    display: block;
+}
+
+.q-2 {
+    display: none;
+}
+
+.q-3 {
+    display: none;
+}
+
+.q-4 {
+    display: none;
+}
+
+.q-5 {
+    display: none;
+}
+
+.q-6 {
+    display: none;
+}
+
+.finalScore {
+    display: none;
+}
+
+@media (max-width: 700px)  { 
+    .container {   
+        scale: 80%;
+    }
+}
