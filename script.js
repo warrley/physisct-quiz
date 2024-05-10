@@ -83,6 +83,8 @@ function nxt() {
         next.remove()
         nScore.remove()
     } 
+
+    text.innerHTML = ''
 } 
 
 function brilho() {
@@ -118,7 +120,7 @@ function brilho() {
 function font() {
     var body = document.body
     var fonts = document.querySelector(".font")
-    var nameFont = document.querySelector(".name-font")
+    var nameFont = document.querySelector(".type-font")
 
     var fontBody = window.getComputedStyle(body).fontFamily;
 
@@ -126,21 +128,21 @@ function font() {
 
     if (fontBody === 'Outfit') {
         body.style.fontFamily = 'Montserrat';
-        nameFont.innerHTML = '<strong>Montserrat</strong>';
+        nameFont.innerHTML = 'Montserrat';
     } else if (fontBody === 'Montserrat') { 
         body.style.fontFamily = 'Poppins';
-        nameFont.innerHTML = '<strong>Poppins</strong>';
+        nameFont.innerHTML = 'Poppins';
     } else if (fontBody === 'Poppins') { 
         body.style.fontFamily = 'Roboto';
-        nameFont.innerHTML = '<strong>Roboto</strong>';
+        nameFont.innerHTML = 'Roboto';
     } else if (fontBody === 'Roboto') { 
         body.style.fontFamily = 'Raleway';
-        nameFont.innerHTML = '<strong>Raleway</strong>';
+        nameFont.innerHTML = 'Raleway';
     } else if (fontBody === 'Raleway') { 
         body.style.fontFamily = 'Nunito Sans';
-        nameFont.innerHTML = '<strong>Nunito</strong>';
+        nameFont.innerHTML = 'Nunito';
     } else {
         body.style.fontFamily = 'Outfit';
-        nameFont.innerHTML = '<strong>Outfit</strong>';
+        nameFont.innerHTML = 'Outfit';
     }
 }  
