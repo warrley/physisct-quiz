@@ -110,3 +110,32 @@ function brilho() {
     }
 }
 
+function font() {
+    var body = document.body
+    var fonts = document.querySelector(".font")
+    var nameFont = document.querySelector(".name-font")
+
+    var fontBody = window.getComputedStyle(body).fontFamily;
+
+    console.log(fontBody)
+
+    if (fontBody === 'Outfit') {
+        body.style.fontFamily = 'Montserrat';
+        nameFont.innerHTML = '<strong>Montserrat</strong>';
+    } else if (fontBody === 'Montserrat') { 
+        body.style.fontFamily = 'Poppins';
+        nameFont.innerHTML = '<strong>Poppins</strong>';
+    } else if (fontBody === 'Poppins') { 
+        body.style.fontFamily = 'Roboto';
+        nameFont.innerHTML = '<strong>Roboto</strong>';
+    } else if (fontBody === 'Roboto') { 
+        body.style.fontFamily = 'Raleway';
+        nameFont.innerHTML = '<strong>Raleway</strong>';
+    } else if (fontBody === 'Raleway') { 
+        body.style.fontFamily = 'Nunito Sans';
+        nameFont.innerHTML = '<strong>Nunito</strong>';
+    } else {
+        body.style.fontFamily = 'Outfit';
+        nameFont.innerHTML = '<strong>Nunito</strong>';
+    }
+}  
