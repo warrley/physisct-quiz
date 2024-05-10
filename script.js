@@ -86,6 +86,7 @@ function nxt() {
 } 
 
 function brilho() {
+    var stg = document.querySelector(".stg")
 
     circle.classList.toggle('light')
     circle.classList.toggle('dark')
@@ -94,6 +95,8 @@ function brilho() {
     if (circle.classList.contains('dark')) {
         container.style.background = 'black';
         body.style.background = '#150889';
+        stg.style.background = 'black';
+        stg.style.color = 'white';
         container.style.color = 'white';
         next.style.border = 'nonne'
         claro.style.display = 'none'
@@ -107,6 +110,8 @@ function brilho() {
         claro.style.display = 'block'
         circle.style.left = '2px'
         next.style.border = '1px solid #150889'
+        stg.style.background = 'white';
+        stg.style.color = '#150889';
     }
 }
 
@@ -136,6 +141,6 @@ function font() {
         nameFont.innerHTML = '<strong>Nunito</strong>';
     } else {
         body.style.fontFamily = 'Outfit';
-        nameFont.innerHTML = '<strong>Nunito</strong>';
+        nameFont.innerHTML = '<strong>Outfit</strong>';
     }
 }  
