@@ -88,10 +88,13 @@ body {
 
 .title {
     padding-bottom: 10px;
+    transition: all 0.5s;
+
 }
 
 .question {
     font-weight: 700;
+    transition: all 0.5s;
 }
 
 .select {
@@ -124,13 +127,12 @@ button {
     margin-top: 30px; 
     transition: all 0.5s;
     cursor: pointer;
-
+    border: 1px solid rgb(21, 8, 137)
 }
 
 button:hover {
     background-color: white;
     color: rgb(21, 8, 137);
-    border: 2px solid rgb(21, 8, 137);
 }
 
 .finalScore {
@@ -214,6 +216,31 @@ h1 {
 
 @media (max-width: 700px)  { 
     .container {   
-        scale: 80%;
+        height: 350px;
+        width: 180px;
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
     }
+
+    .header {
+        font-size: 17px;
+    }
+
+    .options {
+        margin-bottom: 2px;
+        justify-content: space-between;
+        padding: 13px 7px 13px 7px;
+    }
+
+    button {
+        margin-top: 15px;
+    }
+
+
+
+    .toggle {
+        scale: 70%;
+    }
+
 }

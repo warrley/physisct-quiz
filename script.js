@@ -2,6 +2,12 @@ var score = 0;
 var nScore = document.querySelector('.score');
 var text = document.querySelector('.text');
 const next = document.querySelector('button');
+var circle = document.querySelector(".circle")
+var body = document.body
+var container = document.querySelector(".container")
+var claro = document.querySelector(".fa-sun")
+var escuro = document.querySelector("#escuro")
+var back = document.querySelector(".toggle")
 
 var q1 = document.querySelector('.q-1');
 var q2 = document.querySelector('.q-2');
@@ -11,6 +17,7 @@ var q5 = document.querySelector('.q-5');
 var q6 = document.querySelector('.q-6');
 
 
+
 var final = document.querySelector(".finalScore")
 var h2 = document.querySelector("h2")
 var h1 = document.querySelector("h1")
@@ -18,6 +25,8 @@ var cuida = document.querySelector('.pfinal')
 
 
 var questionActual = 1;
+
+
 
 
 
@@ -77,12 +86,6 @@ function nxt() {
 } 
 
 function brilho() {
-    var circle = document.querySelector(".circle")
-    var body = document.body
-    var container = document.querySelector(".container")
-    var claro = document.querySelector(".fa-sun")
-    var escuro = document.querySelector("#escuro")
-    var back = document.querySelector(".toggle")
 
     circle.classList.toggle('light')
     circle.classList.toggle('dark')
@@ -92,7 +95,7 @@ function brilho() {
         container.style.background = 'black';
         body.style.background = '#150889';
         container.style.color = 'white';
-        next.style.border = 'none'
+        next.style.border = 'nonne'
         claro.style.display = 'none'
         escuro.style.display = 'block'
         circle.style.left = '21px'
@@ -103,6 +106,7 @@ function brilho() {
         escuro.style.display = 'none'
         claro.style.display = 'block'
         circle.style.left = '2px'
-
+        next.style.border = '1px solid #150889'
     }
 }
+
